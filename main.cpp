@@ -17,7 +17,7 @@ public:
     Branch( );
     void setBranchAddress(int addressNew);
 private:
-    int address;
+    int address; // The CEO sets the address of the specific branch
     string manager; //The manager sets the prices for the items
     vector<string> employees; //The waiter will help to display the details of the item
 
@@ -37,9 +37,9 @@ public:
 
 
 private:
-  double price; //Of the type Money
-  double calories;
-  string itemName;
+  double price; // Used for the price of the item. 
+  double calories; // Used to show the amount of calories
+  string itemName; // Used for the name of the item
 };
 
 class Restaurant //Prototype of restuarant, the whole restaurant Food chain(Burger King)
@@ -69,7 +69,7 @@ private:
 };
 
 int main()
-{//while equal to 4 we break out of the loop
+{//If the while loop condition is equal to 4, we break out of the loop
     int choice,func;
     Branch manhattanBranch;
     Restaurant burgerKing;
